@@ -139,6 +139,8 @@
 &kp LSHFT          &kp Q      &kp J    &kp K     &kp X      &kp ESC        &kp ENTER  &kp B     &kp M  &kp W  &kp V  &kp Z
 &trans             &to 0      &trans   &kp LGUI  &kp SPACE  &kp LCTRL      &kp LALT   &kp BSPC                       &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
