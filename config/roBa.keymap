@@ -24,16 +24,6 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
@@ -74,10 +64,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))        &kp UP_ARROW             &kp LC(TAB)                   &trans                      &trans  &kp RS(RG(TAB))                       &kp RC(RS(UP_ARROW))              &kp RG(TAB)                            &trans
-&kp LEFT_SHIFT  &mt LEFT_COMMAND LEFT  &mt LEFT_ALT DOWN_ARROW  &mt LEFT_CONTROL RIGHT_ARROW  &trans  &trans      &trans  &trans  &mt RIGHT_CONTROL RC(RS(LEFT_ARROW))  &mt RIGHT_ALT RC(RS(DOWN_ARROW))  &mt RIGHT_COMMAND RC(RS(RIGHT_ARROW))  &kp RIGHT_SHIFT
-&trans          &trans                 &trans                   &trans                        &trans  &trans      &trans  &trans  &trans                                &trans                            &trans                                 &trans
-&trans          &trans                 &trans                   &trans                        &trans  &trans      &trans  &trans                                                                                                                 &trans
+&kp ESCAPE          &kp LC(LS(TAB))        &kp UP_ARROW             &kp LC(TAB)                   &trans                      &trans  &kp RS(RG(TAB))                       &kp RC(RS(UP_ARROW))              &kp RG(TAB)                            &kp ESC
+&mt LEFT_SHIFT TAB  &mt LEFT_COMMAND LEFT  &mt LEFT_ALT DOWN_ARROW  &mt LEFT_CONTROL RIGHT_ARROW  &trans  &trans      &trans  &trans  &mt RIGHT_CONTROL RC(RS(LEFT_ARROW))  &mt RIGHT_ALT RC(RS(DOWN_ARROW))  &mt RIGHT_COMMAND RC(RS(RIGHT_ARROW))  &mt RIGHT_SHIFT TAB
+&trans              &trans                 &trans                   &trans                        &trans  &trans      &trans  &trans  &trans                                &trans                            &trans                                 &trans
+&trans              &trans                 &trans                   &trans                        &trans  &trans      &trans  &trans                                                                                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
