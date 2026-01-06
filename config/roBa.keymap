@@ -20,6 +20,11 @@
     // };
 };
 
+&mt {
+    tapping-term-ms = <300>;
+    flavor = "tap-preferred";
+};
+
 / {
     combos {
         compatible = "zmk,combos";
