@@ -20,7 +20,10 @@
     // };
 };
 
-&mt { flavor = "tap-preferred"; };
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <150>;
+};
 
 / {
     combos {
