@@ -40,10 +40,10 @@
 
         default_layer {
             bindings = <
-&mt GRAVE APOS    &kp COMMA           &kp DOT         &kp P               &kp Y                                                          &kp F        &kp G                &kp C            &kp R                &kp L
-&mt LEFT_SHIFT A  &mt LEFT_COMMAND O  &mt LEFT_ALT E  &mt LEFT_CONTROL U  &kp I        &kp LA(LC(LEFT_ARROW))       &kp DELETE           &kp D        &mt RIGHT_CONTROL H  &mt RIGHT_ALT T  &mt RIGHT_COMMAND N  &mt RIGHT_SHIFT S
-&kp SLASH         &kp Q               &kp J           &kp K               &kp X        &kp LA(LC(RIGHT_ARROW))      &kp BACKSPACE        &kp B        &kp M                &kp W            &kp V                &kp Z
-&lt 1 BACKSLASH   &kp HOME            &kp END         &kp LC(UP_ARROW)    &lt 2 SPACE  &kp LC(LEFT_ARROW)           &kp RC(RIGHT_ARROW)  &lt 3 ENTER                                                             &lt 6 PIPE
+&mt GRAVE APOS    &kp COMMA           &kp DOT         &kp P               &kp Y                                                         &kp F        &kp G                &kp C            &kp R                &kp L
+&mt LEFT_SHIFT A  &mt LEFT_COMMAND O  &mt LEFT_ALT E  &mt LEFT_CONTROL U  &kp I        &kp LA(LC(LEFT_ARROW))      &kp LA(LC(RIGHT))    &kp D        &mt RIGHT_CONTROL H  &mt RIGHT_ALT T  &mt RIGHT_COMMAND N  &mt RIGHT_SHIFT S
+&kp SLASH         &kp Q               &kp J           &kp K               &kp X        &kp BACKSPACE               &kp DELETE           &kp B        &kp M                &kp W            &kp V                &kp Z
+&lt 1 BACKSLASH   &kp HOME            &kp END         &kp LC(UP_ARROW)    &lt 2 SPACE  &kp LC(LEFT_ARROW)          &kp RC(RIGHT_ARROW)  &lt 3 ENTER                                                             &lt 6 PIPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -60,10 +60,10 @@
 
         NUM {
             bindings = <
-&kp MINUS             &kp KP_NUMBER_7               &kp KP_NUMBER_8           &kp KP_NUMBER_9               &kp PLUS                                    &kp CARET         &kp AMPERSAND              &kp TILDE           &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS
-&mt LEFT_SHIFT SLASH  &mt LEFT_COMMAND KP_NUMBER_4  &mt LEFT_ALT KP_NUMBER_5  &mt LEFT_CONTROL KP_NUMBER_6  &kp ASTERISK  &kp EQUAL      &kp QUESTION   &kp EXCLAMATION   &mt RIGHT_CONTROL AT_SIGN  &mt RIGHT_ALT HASH  &mt RIGHT_COMMAND DOLLAR  &mt RIGHT_SHIFT PERCENT
-&kp KP_N0             &kp KP_NUMBER_1               &kp KP_NUMBER_2           &kp KP_NUMBER_3               &kp PERIOD    &kp COLON      &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp LEFT_BRACE      &kp RIGHT_BRACE           &kp BACKSLASH
-&trans                &trans                        &trans                    &trans                        &trans        &trans         &trans         &trans                                                                                     &kp PIPE
+&kp MINUS             &kp KP_NUMBER_7               &kp KP_NUMBER_8           &kp KP_NUMBER_9               &kp PLUS                                        &kp CARET         &kp AMPERSAND              &kp TILDE           &kp LEFT_PARENTHESIS      &kp RIGHT_PARENTHESIS
+&mt LEFT_SHIFT SLASH  &mt LEFT_COMMAND KP_NUMBER_4  &mt LEFT_ALT KP_NUMBER_5  &mt LEFT_CONTROL KP_NUMBER_6  &kp ASTERISK  &kp EQUAL          &kp QUESTION   &kp EXCLAMATION   &mt RIGHT_CONTROL AT_SIGN  &mt RIGHT_ALT HASH  &mt RIGHT_COMMAND DOLLAR  &mt RIGHT_SHIFT PERCENT
+&kp KP_N0             &kp KP_NUMBER_1               &kp KP_NUMBER_2           &kp KP_NUMBER_3               &kp PERIOD    &kp BACKSLASH      &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET          &kp LEFT_BRACE      &kp RIGHT_BRACE           &kp COLON
+&trans                &trans                        &trans                    &trans                        &trans        &trans             &trans         &trans                                                                                     &kp PIPE
             >;
         };
 
@@ -99,9 +99,9 @@
         layer_6 {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &trans
             >;
         };
     };
